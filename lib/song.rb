@@ -2,6 +2,7 @@
 require 'pry'
 
 class Song
+
   attr_accessor :name, :artist, :genre
 
   # Class variables
@@ -9,8 +10,6 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
-
-
 
   def initialize(name, artist, genre)
     @name = name
@@ -24,7 +23,6 @@ class Song
   def self.count
     @@count
   end
-
 
   def self.genres
     @@genres.uniq
@@ -57,7 +55,4 @@ class Song
     end
     genre_count
   end
-
-
-
 end
